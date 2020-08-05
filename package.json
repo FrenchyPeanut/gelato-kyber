@@ -6,6 +6,7 @@
   "author": "The legendary members of gelato-digital",
   "private": false,
   "scripts": {
+    "compile": "npx buidler compile",
     "get-dai": "npx buidler get-dai --network rinkeby",
     "get-knc": "npx buidler get-token-faucet 0x6FA355a7b6bD2D6bD8b927C489221BFBb6f1D7B2 --network rinkeby",
     "assign-executor": "npx buidler test demo/Part-2_Gelato_Provider/step1-assign-executor.js",
@@ -17,6 +18,7 @@
     "create-userproxy": "npx buidler test demo/Part-1_Gelato_User/step1-create-user-proxy.js",
     "userproxy-setup": "npx buidler test demo/Part-1_Gelato_User/step2-user-proxy-setup.js",
     "submit-task-self-provider": "npx buidler test demo/Part-1_Gelato_User/step3-submit-task.js",
+    "submit-ETH-task-self-provider-and-monitor": "npx buidler test demo/Part-1_Gelato_User/step3.1-submit-task.js && npx buidler run demo/Part-1_Gelato_User/monitorBalanceChanges.js",
     "withdraw-remaining-eth": "npx buidler test demo/Part-1_Gelato_User/step4-withdraw-remaining-eth.js",
     "submit-task-self-provider-and-monitor": "npx buidler test demo/Part-1_Gelato_User/step3-submit-task.js && npx buidler run demo/Part-1_Gelato_User/monitorBalanceChanges.js",
     "submit-task-external-provider-and-monitor": "npx buidler test demo/Part-2_Gelato_Provider/step5-submit-task.js && npx buidler run demo/Part-1_Gelato_User/monitorBalanceChanges.js",
